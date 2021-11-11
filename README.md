@@ -28,13 +28,8 @@ There should be dashes at the bottom of each problem. The dashes should run alon
 Function Call:
 
 arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
-arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True)
 Output:
 
-  32         1      9999      523
-+  8    - 3801    + 9999    -  49
-----    ------    ------    -----
-  40     -3800     19998      474
   32         1      9999      523
 +  8    - 3801    + 9999    -  49
 ----    ------    ------    -----
