@@ -1,2 +1,2 @@
 # Straight Math Problems
-Turns in line math operations to a column format.
+This python program turns in line math operations (+ or -) to a column format.
