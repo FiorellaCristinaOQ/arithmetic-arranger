@@ -26,16 +26,35 @@ def arithmetic_arranger(problems,rpta=False):
         else:
             print("Error: Numbers must only contain digits.")
             quit()
-    rptas = []
+    
+    rptas = [] # Lista de longitud 0
+    
     if rpta == True: # Return problems and their answers
         for i in range(len(operators)):
             if operators[i] == '+':
-                rptas.append(int(nums1[i]) + int(nums2[i]))
+                rptas.append(str(int(nums1[i]) + int(nums2[i])))
             else:
-                rptas.append(int(nums1[i]) - int(nums2[i]))
-        return 
-    else: # Return in blank arranged problems
-        print()
-    return nums1,operators,nums2,rptas
+                rptas.append(str(int(nums1[i]) - int(nums2[i])))
+    
+    arranged1 = ''
+    arranged2 = ''
+    arranged3 = ''
+    arranged4 = ''
+    
+    for i in range(len(nums1)):
+        spaces = len(nums1[i])
+        if spaces < len(nums2[i]):
+            spaces = len(nums2[i])
+        arranged1 = arranged1 + (spaces + 2 - len(nums1[i]))*' ' + nums1[i] + 4*' '
+        arranged2 = arranged2 + operators[i] + ' ' + (spaces - len(nums2[i]))*' ' + nums2[i] + 4*' '
+        arranged3 = arranged3 + (spaces + 2)*'-' + 4*' '
+        if rpta == True:
+            arranged4 = arranged4 + (spaces + 2 - len(rptas[i]))*' ' + rptas[i] + 4*' '
+    
+    arranged = arranged1 + '\n' + arranged2 + '\n' + arranged3
+    if rpta == True:
+        arranged = arranged + '\n' + arranged4
+    
+    return arranged
 
-print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
+print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
