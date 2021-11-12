@@ -2,7 +2,6 @@ def arithmetic_arranger(problems,rpta=False):
     operators = []
     nums1 = []
     nums2 = []
-    num = ''
     if len(problems)>5:
         print('Error: Too many problems.')
         quit()
@@ -57,4 +56,4 @@ def arithmetic_arranger(problems,rpta=False):
     
     return arranged
 
-print(arithmetic_arranger(["32 + 8", "1 - 3801", "9999 + 9999", "523 - 49"], True))
+print(arithmetic_arranger(['44 + 815', '909 - 2', '45 + 43', '123 + 49','888 + 40', '653 + 87']))
