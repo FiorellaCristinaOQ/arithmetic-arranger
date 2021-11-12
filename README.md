@@ -23,3 +23,7 @@ Numbers should be right-aligned.
 There should be four spaces between each problem.
 
 There should be dashes at the bottom of each problem. The dashes should run along the entire length of each problem individually.
+
+### Example
+
+![Image_arithmetic_arranger](https://user-images.githubusercontent.com/89871667/141548521-7aa26902-7da6-4ffa-be5c-f34aa53f34dd.PNG)
