@@ -26,6 +26,16 @@ def arithmetic_arranger(problems,rpta=False):
         else:
             print("Error: Numbers must only contain digits.")
             quit()
-    return nums1,operators,nums2
+    rptas = []
+    if rpta == True: # Return problems and their answers
+        for i in range(len(operators)):
+            if operators[i] == '+':
+                rptas.append(int(nums1[i]) + int(nums2[i]))
+            else:
+                rptas.append(int(nums1[i]) - int(nums2[i]))
+        return 
+    else: # Return in blank arranged problems
+        print()
+    return nums1,operators,nums2,rptas
 
 print(arithmetic_arranger(["32 + 698", "3801 - 2", "45 + 43", "123 + 49"]))
