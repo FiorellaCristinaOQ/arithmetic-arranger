@@ -1,6 +1,6 @@
 # Arithmetic arranger
 
-This python program turns in line math operations (+ or -) to a column format.
+This is python program created for the Scientific Computing with Python FreeCodeCamp course. It rearranges simple math operations (+ or -) written in row format to a column format.
 ## Instructions
 
 Create a function that receives a list of strings that are arithmetic problems and returns the problems arranged vertically and side-by-side. The function should optionally take a second argument. When the second argument is set to True, the answers should be displayed.
