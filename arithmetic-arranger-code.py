@@ -3,28 +3,23 @@ def arithmetic_arranger(problems,rpta=False):
     nums1 = []
     nums2 = []
     if len(problems)>5:
-        print('Error: Too many problems.')
-        quit()
+        return 'Error: Too many problems.'
     for i in problems:
         lst = i.split()
         if len(lst[0]) > 4 or len(lst[2]) > 4:
-            print("Error: Numbers cannot be more than four digits.")
-            quit()
+            return "Error: Numbers cannot be more than four digits."
         if lst[0].isdigit():
             nums1.append(lst[0])
         else:
-            print("Error: Numbers must only contain digits.")
-            quit()
+            return "Error: Numbers must only contain digits."
         if lst[1] == '+' or lst[1] == '-':
             operators.append(lst[1])
         else:
-            print("Error: Operator must be '+' or '-'.")
-            quit()
+            return "Error: Operator must be '+' or '-'."
         if lst[2].isdigit():
             nums2.append(lst[2])
         else:
-            print("Error: Numbers must only contain digits.")
-            quit()
+            return "Error: Numbers must only contain digits."
     
     rptas = [] # Lista de longitud 0
     
