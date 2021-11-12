@@ -56,4 +56,21 @@ def arithmetic_arranger(problems,rpta=False):
     
     return arranged
 
+print('Test two problems arrangement')
+print(arithmetic_arranger(['3801 - 2', '123 + 49']))
+print('Test four problems arrangement')
+print(arithmetic_arranger(['3 + 855', '3801 - 2', '45 + 43', '123 + 49']))
+print('Test five problems arrangement')
+print(arithmetic_arranger(['11 + 4', '3801 - 2999', '1 + 2', '123 + 49', '1 - 9380']))
+print('Test too many problems')
 print(arithmetic_arranger(['44 + 815', '909 - 2', '45 + 43', '123 + 49','888 + 40', '653 + 87']))
+print('Test incorrect operator')
+print(arithmetic_arranger(['3 / 855', '3801 - 2', '45 + 43', '123 + 49']))
+print('Test too many digits')
+print(arithmetic_arranger(['24 + 85215', '3801 - 2', '45 + 43', '123 + 49']))
+print('Test only digits')
+print(arithmetic_arranger(['98 + 3g5', '3801 - 2', '45 + 43', '123 + 49']))
+print('Test two problems with solutions')
+print(arithmetic_arranger(['3 + 855', '988 + 40'], True))
+print('Test five problems with solutions')
+print(arithmetic_arranger(['32 - 698', '1 - 3801', '45 + 43', '123 + 49', '988 + 40'], True))
